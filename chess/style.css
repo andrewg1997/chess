@@ -1,0 +1,33 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
+    width: 480px;
+    height: 480px;
+    margin: 0 auto;
+
+    border-color: black;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-radius: 5px;
+}
+body{
+    background-color: white;
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+}
+.grid-item{
+    padding: 20px;
+    color: red;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

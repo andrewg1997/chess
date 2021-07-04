@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chess Game</title>
+
+<style>
+    #grid-container{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
+    width: 480px;
+    height: 480px;
+    margin: 0 auto;
+
+    border-color: black;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-radius: 5px;
+    }
+    body{
+        background-color: white;
+    }
+    .white{
+        background-color: white;
+    }
+    .black{
+        background-color: black;
+    }
+    .grid-item{
+        padding: 20px;
+        color: red;
+    }
+
+    #content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+</style>
+</head>
+<body>
+    <h1 id = "title">Welcome to Chess!</h1>
+
+    <div id='content'>
+        <div id="grid-container">
+            <div id = "a8" class= "grid-item white">64</div>
+            <div id ="b8" class= "grid-item black">63</div>
+            <div id ="c8" class= "grid-item white">62</div>
+            <div id ="d8" class= "grid-item black">61</div>
+            <div id ="e8" class= "grid-item white">60</div>
+            <div id ="f8" class= "grid-item black">59</div>
+            <div id ="g8" class= "grid-item white">58</div>
+            <div id ="h8" class= "grid-item black">57</div>
+            <div id ="a7" class= "grid-item black">56</div>
+            <div id ="b7" class= "grid-item white">55</div>
+            <div id ="c7" class= "grid-item black">54</div>
+            <div id ="d7" class= "grid-item white">53</div>
+            <div id ="e7" class= "grid-item black">52</div>
+            <div id ="f7" class= "grid-item white">51</div>
+            <div id ="g7" class= "grid-item black">50</div>
+            <div id ="h7" class= "grid-item white">49</div>
+            <div id ="a6" class= "grid-item white">48</div>
+            <div id ="b6" class= "grid-item black">47</div>
+            <div id ="c6" class= "grid-item white">46</div>
+            <div id ="d6" class= "grid-item black">45</div>
+            <div id ="e6" class= "grid-item white">44</div>
+            <div id ="f6" class= "grid-item black">43</div>
+            <div id ="g6" class= "grid-item white">42</div>
+            <div id ="h6" class= "grid-item black">41</div>
+            <div id ="a5" class= "grid-item black">40</div>
+            <div id ="b5" class= "grid-item white">39</div>
+            <div id ="c5" class= "grid-item black">38</div>
+            <div id ="d5" class= "grid-item white">37</div>
+            <div id ="e5" class= "grid-item black">36</div>
+            <div id ="f5" class= "grid-item white">35</div>
+            <div id ="g5" class= "grid-item black">34</div>
+            <div id ="h5" class= "grid-item white">33</div>
+            <div id ="a4" class= "grid-item white">32</div>
+            <div id ="b4" class= "grid-item black">31</div>
+            <div id ="c4" class= "grid-item white">30</div>
+            <div id ="d4" class= "grid-item black">29</div>
+            <div id ="e4" class= "grid-item white">28</div>
+            <div id ="f4" class= "grid-item black">27</div>
+            <div id ="g4" class= "grid-item white">26</div>
+            <div id ="h4" class= "grid-item black">25</div>
+            <div id ="a3" class= "grid-item black">24</div>
+            <div id ="b3" class= "grid-item white">23</div>
+            <div id ="c3" class= "grid-item black">22</div>
+            <div id ="d3" class= "grid-item white">21</div>
+            <div id ="e3" class= "grid-item black">20</div>
+            <div id ="f3" class= "grid-item white">19</div>
+            <div id ="g3" class= "grid-item black">18</div>
+            <div id ="h3" class= "grid-item white">17</div>
+            <div id ="a2" class= "grid-item white">16</div>
+            <div id ="b2" class= "grid-item black">15</div>
+            <div id ="c2" class= "grid-item white">14</div>
+            <div id ="d2" class= "grid-item black">13</div>
+            <div id ="e2" class= "grid-item white">12</div>
+            <div id ="f2" class= "grid-item black">11</div>
+            <div id ="g2" class= "grid-item white">10</div>
+            <div id ="h2" class= "grid-item black">9</div>
+            <div id ="a1" class= "grid-item black">8</div>
+            <div id ="b1" class= "grid-item white">7</div>
+            <div id ="c1" class= "grid-item black">6</div>
+            <div id ="d1" class= "grid-item white">5</div>
+            <div id ="e1" class= "grid-item black">4</div>
+            <div id ="f1" class= "grid-item white">3</div>
+            <div id ="g1" class= "grid-item black">2</div>
+            <div id ="h1" class= "grid-item white">1</div>
+        </div>
+    
+        <div id='text_and_form'>
+            <p>Last Move: </p><p id='last_move'>???</p>
+            <p>Turn: </p><p id='turn'>???</p>
+    
+            <form action="">
+                <label for="ispace">Move from:</label><br>
+                <input type="text" id="ispace" name="ispace" value="a1"><br>
+                <label for="fspace">Move to:</label><br>
+                <input type="text" id="fspace" name="fspace" value="a1"><br><br>
+                <input type="submit" value="Make Move">
+              </form>
+        </div>
+    </div>
